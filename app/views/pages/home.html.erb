@@ -1,11 +1,28 @@
 <body>
-
+  
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  
   <section class="section-main">
     <div class="row">
       <div class="main-box">
     		<h1>Clean. Efficient.<br>Design Solutions</h1>
     		<div class="btn">
-    		  <a href="####" class="btn-main">Let's Get Started</a>
+    		  <a href="#about" class="btn-main">Let's Get Started</a>
     	  </div>
     	</div>
   	</div>
@@ -59,17 +76,6 @@
   </section>
   
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-  <script>
-    $('.smooth').on('click', function() {
-      $.smoothScroll({
-          scrollElement: $('body'),
-          scrollTarget: '#' + this.id
-      });
-      
-      return false;
-    });
-  </script>
+
   
 </body>
