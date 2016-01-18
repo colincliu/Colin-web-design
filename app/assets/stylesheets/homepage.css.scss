@@ -31,7 +31,7 @@ html {
 /* -------------------------------------------- */
 
 .logo {
-	height: 150px;
+	height: 80px;
 	width: auto;
 	float: left;
 }
@@ -39,13 +39,15 @@ html {
 /* ------------ NAVIGATION BAR -------------*/
 
 .nav-bar {
-	background-color: #fff;
+	background-color: #000;
+	position:fixed;
+	width: 100%;
 }
 
 .nav-main {
 	list-style: none;
 	float: right;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .nav-main li {
@@ -57,7 +59,7 @@ html {
 .nav-main li a:visited {
 	color: #fff;
 	text-decoration: none;
-	font-size: 150%;
+	font-size: 120%;
 	padding-bottom: 5px;
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.5s;
@@ -67,7 +69,7 @@ html {
 .nav-main li a:hover {
 	color: #e67e22;
 	text-decoration: none;
-	font-size: 150%;
+	font-size: 120%;
 	border-bottom: 2px solid #e67e22;
 }
 
@@ -77,6 +79,7 @@ html {
 
 .section-main {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), image-url("background-landing.jpg");
+	background-position: 0 0;
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -145,12 +148,52 @@ h1 {
 /* -------------------------------------------- */
 
 .section-about {
-	margin-top: 100px;
+	padding-top: 200px;
+	height: 100vh;
 }
 
-.intro {
+.intro-1 {
 	margin: 0 auto;
-	width: 70%;
-	font-size:140%;
+	width: 75%;
+	font-size:110%;
 	line-height: 145%;
+	margin-bottom: 100px;
+}
+
+.intro-2 {
+	margin: 0 auto;
+	width: 75%;
+	font-size:100%;
+	line-height: 145%;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.columns {
+	text-align: center;
+}
+
+.icon-large {
+	font-size:400%;
+	align: center;
+	margin: 0 auto;
+	color: #e67e22;
+}
+
+/* -------------------------------------------- */
+/* Section-Past-Projects */
+/* -------------------------------------------- */
+
+.section-past-projects {
+	height: 100vh;
+	background-color: #eda25f;
+}
+
+/* -------------------------------------------- */
+/* Section-Contact */
+/* -------------------------------------------- */
+
+.section-contact {
+	height: 100vh;
+	background-color: #fff;
 }

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Colin Design Solutions</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-	<%= stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Lato:400,300,700', media: 'all', 'data-turbolinks-track' => true %>
-</head>
-<body>
-<%= render 'navbar' %>
-<%= yield %>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</body>
+    <title><%= content_for?(:title) ? yield(:title) : "Colin Web Design" %></title>
+
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', '//fonts.googleapis.com/css?family=Lato:400,300,700', media: 'all', 'data-turbolinks-track' => true %>
+  </head>
+
+  <body>
+    
+    <%= render 'navbar' %>
+
+    <%= yield %>
+
+  </body>
 </html>

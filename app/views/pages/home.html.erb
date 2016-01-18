@@ -1,4 +1,20 @@
 <body>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+  <script>
+    $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+      
+      return false;
+    });
+  </script>
+  
+  
+  
   <section class="section-main">
     <div class="row">
       <div class="main-box">			
@@ -13,19 +29,48 @@
     </div>
   </section>
   
-  <section class="section-about">
+  <section id="about" class="section-about">
     <div class="row">
-      <div class="intro">
+      <div class="intro-1">
         <p>
           Hi, my name is Colin. I am making this website as part of my journey to learn how to design a website. 
           Each time I learn something new, I will try to implement it into this site. So as my knowledge grows, so will this website. 
           Lets see where this journey takes me.
         </p>
       </div>
-      
-      
-      
     </div>
-  </section>	
+          
+    <div class="row">
+      <p class="intro-2">
+        My current proccess:  
+      </p>
+      <div class="small-2 large-4 columns">
+        <i class="ion-ios-book icon-large"></i>
+        <p>Study and learn new code from various online resources.</p>
+      </div>
+      
+      <div class="small-4 large-4 columns">
+        <i class="ion-edit icon-large"></i>
+        <p>Apply learnt knowledge into this website.</p>
+      </div>
+      
+      <div class="small-6 large-4 columns">
+        <i class="ion-refresh icon-large"></i>
+        <p>Change the site as new skills are learnt.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="past-projects" class="section-past-projects">
+    <p>
+      nothing here so far...
+    </p>
+  </section>
+  
+  <section id = "contact" class="section-contact">
+    <p>
+      contact stuff
+    </p>
+  </section>
   
 </body>
