@@ -1,88 +1,129 @@
-<body>
-  
-  <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
+<script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
         }
-      });
+      }
     });
-  </script>
-  
-  <section class="section-main">
-    <div class="row">
-      <div class="main-box">
-    		<h1>Clean. Efficient.<br>Design Solutions</h1>
-    		<div class="btn">
-    		  <a href="#about" class="btn-main">Let's Get Started</a>
-    	  </div>
-    	</div>
-  	</div>
-  	  <div class="down-arrow">
-    	 <h2>&#8675;<h2>
-    </div>
-  </section>
-  
-  <section id="about" class="section-about">
-    <div class="row">
-      <div class="intro-1">
-        <p>
-          Hi, my name is Colin. I am making this website as part of my journey to learn how to design a website. 
-          Each time I learn something new, I will try to implement it into this site. So as my knowledge grows, so will this website. 
-          Lets see where this journey takes me.
-        </p>
-      </div>
-    </div>
-          
-    <div class="row">
-      <p class="intro-2">
-        My current proccess:  
-      </p>
-      <div class="small-2 large-4 columns">
-        <figure class="col-container">
-          <i class="ion-ios-book icon-large"></i>
-        </figure>
-        <p>Study and learn new code from various online resources.</p>
-      </div>
-      
-      <div class="small-4 large-4 columns">
-        <figure class="col-container">
-          <i class="ion-edit icon-large"></i>
-        </figure>
-        <p>Apply learnt knowledge into this website.</p>
-      </div>
-      
-      <div class="small-6 large-4 columns">
-        <figure class="col-container">
-           <i class="ion-refresh icon-large"></i>
-        </figure>
-        <p>Change the site as new skills are learnt.</p>
-        
-      </div>
-    </div>
-  </section>
-  
-  <section id="past-projects" class="section-past-projects">
-    <p>
-      nothing here so far...
-    </p>
-  </section>
-  
-  <section id = "contact" class="section-contact">
-    <p>
-      contact stuff
-    </p>
-  </section>
-  
-    
+  });
+</script>
 
+<section class="section-main">
+  <div class="row">
+    <div class="header-box">
+  		<h1>Clean. Efficient.<br>Design Solutions</h1>
+  	</div>
+		<div class="btn-box">
+		  <a href="#about" class="btn-main">Let's Get Started</a>
+	  </div>
+  	</div>
+	</div>
+	  <div class="down-arrow">
+  	 <h3>&#8675;<h3>
+  </div>
+</section>
+
+<section id="about" class="section-about">
   
-</body>
+  <div class="row">
+    <h2>About Me</h2>
+    <br>
+  </div>
+  
+  <div class="row">
+    <div class="intro-1">
+      <p>
+        My name is Colin. At the start of 2016 I began to study with the goal to become a full stack web developer.
+        I am learning HTML, CSS, Ruby on Rails, and whatever else is nessesary to reach this goal.
+        This site is my launch pad, my practice ground, my study guide, and also my resume.
+        As I learn, I will test, and implement my new skills and knowledge onto this site.
+        Lets see where this journey leads.
+      </p>
+    </div>
+  </div>
+        
+  <div class="row">
+    <p class="intro-2">
+      My current learning proccess:  
+    </p>
+    <div class="small-4 large-4 columns">
+      <figure class="col-container">
+        <i class="ion-ios-book icon-large"></i>
+      </figure>
+      <p>Study and learn from various online resources. These include Udemy.com, hackerrank.com, and any other tutorials I find.</p>
+    </div>
+    
+    <div class="small-4 large-4 columns">
+      <figure class="col-container">
+        <i class="ion-edit icon-large"></i>
+      </figure>
+      <p>Apply learnt knowledge into this website. I built this website with the Ruby on Rails framework, using HTML and CSS.
+      </br>
+      Things that I will need to learn in the near future: <br>
+      <ul>
+        <li>Bootstrap/Foundation</li>
+        <li>SCSS/SASS</li>
+        <li>Slim</li>
+      </ul>
+      </p>
+    </div>
+    
+    <div class="small-4 large-4 columns">
+      <figure class="col-container">
+         <i class="ion-refresh icon-large"></i>
+      </figure>
+      <p>Change the site as new skills are learnt. Work on other projects using the skills I learnt.</p>
+      
+    </div>
+  </div>
+</section>
+
+<section id="past-projects" class="section-past-projects">
+  <p>
+    nothing here so far...
+  </p>
+</section>
+
+<section id = "contact" class="section-contact">
+  <div class="accordion" data-accordion data-allow-all-closed="true">
+    <div class="accordion-item" data-accordion-item>
+      <a class="accordion-title contact-clickable"><i class="ion-ios-email">&nbsp;</i>Contact</a>
+      <div class="accordion-content" data-tab-content>
+        <h2>I'd love to hear from you</h2>
+        <br>
+        <form class="contact-form" data-abide>
+          <div class="row">
+            <input type="text" id="name" placeholder="name" required>
+            <input type="email" id="email" placeholder="your email" required>
+              <span class="form-error">
+                Please enter a valid email address.
+              </span>
+            <textarea id="textarea" placeholder="message..." required></textarea>
+            <input type="submit" class="btn-form" value="Submit">
+          </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+
+
+
+
+
+</section>
+
+<footer>
+  
+</footer>
+
+
