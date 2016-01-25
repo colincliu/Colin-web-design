@@ -255,8 +255,11 @@ h2:after {
 }
 
 .columns ul {
-	list-style: none;
 	text-align: left;
+}
+
+.columns ul li {
+	margin-left: 5%;
 }
 
 
