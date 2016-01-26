@@ -15,6 +15,62 @@
   });
 </script>
 
+<!-- testing
+<script>
+  $(function() {
+    $('h1').click(function() {
+      $('.nav-bar').css('background-color', 'red');
+    })
+  });
+</script>
+-->
+
+<script>
+  $(function() {
+  	$('.js--section-about').waypoint(function(direction) {
+  		if (direction == "down") {
+  			$('nav').addClass('sticky animated fadeInDown');
+  		}
+  		else {
+  			$('nav').removeClass('sticky');
+  		}
+  	}, {
+  	  offset: '8vh'
+  	});
+  });
+</script>
+
+
+<!-- to learn
+<script>
+  $('.js--section-about').waypoint(function(direction) {
+
+var nav = $('nav');
+
+if (direction == "down") {
+
+nav.addClass('sticky animated fadeInDown');
+
+} else {
+
+nav.addClass('fadeOutUp');
+
+setTimeout(function() {
+
+nav.removeClass('sticky animated fadeInDown fadeOutUp');
+
+}, 300);
+
+}
+
+}, {
+
+offset: '60px;'
+
+});
+</script>
+-->
+
 <section id="main" class="section-main">
   <div class="row">
     <div class="header-box">
@@ -30,7 +86,7 @@
   </div>
 </section>
 
-<section id="about" class="section-about">
+<section id="about" class="section-about js--section-about">
   
   <div class="row">
     <h2>About Me</h2>
@@ -94,7 +150,7 @@
 
 </section>
 
-<section id = "contact" class="section-contact">
+<section id="contact" class="section-contact">
   <div class="accordion" data-accordion data-allow-all-closed="true">
     <div class="accordion-item" data-accordion-item>
       <a class="accordion-title contact-clickable"><i class="ion-ios-email">&nbsp;</i>Contact</a>

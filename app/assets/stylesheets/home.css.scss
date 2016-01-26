@@ -1,6 +1,7 @@
 /* ---------------------------------------------- */
 /* BASIC SETUP                                    */ 
-/* Orange color: #e67e22                            */ 
+/* Main Orange color: #e67e22                     */ 
+/* Nav-bar and Footer color: #222                 */ 
 /* ---------------------------------------------- */
 
 * {
@@ -53,15 +54,17 @@ h2:after {
 
 /* ------------- Common --------------*/
 
-#nav-bar {
-	background-color: #222;
-	position:fixed;
+.nav-bar {
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	z-index:1;
 }
 
-.logo,
-#nav-bar {
+.nav-bar,
+.logo {
 	height: 8vh;
 }
 
@@ -83,21 +86,21 @@ h2:after {
 }
 
 
-#nav-bar ul {
+.nav-bar ul {
 	//border: 1px solid white;
 	display: inline;
 	list-style: none;
 
 }
 
-#nav-bar li {
+.nav-bar li {
 	//border: 1px solid red;
 	display: inline;
 	margin-right: 5%;
 }
 
-#nav-bar li a:link,
-#nav-bar li a:visited {
+.nav-bar li a:link,
+.nav-bar li a:visited {
 	color: #fff;
 	text-decoration: none;
 	font-size: 120%;
@@ -106,12 +109,38 @@ h2:after {
 	transition: border-bottom 0.3s, color 0.3s;
 }
 
-#nav-bar li a:active,
-#nav-bar li a:hover {
+.nav-bar li a:active,
+.nav-bar li a:hover {
 	color: #e67e22;
 	font-size: 120%;
 	border-bottom: 2px solid #e67e22;
 }
+
+/* ------------ Sticky Navigation Bar -------------*/
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 2px 2px #efefef;
+	z-index: 9999;
+}
+
+.sticky .nav-bar {
+	background-color: #222;
+}
+
+.sticky .nav-bar,
+.sticky .logo {
+	height: 8vh;
+}
+
+.sticky .logo {
+	width: auto;
+	float: left;
+}
+
 
 /* -------------------------------------------- */
 /* MAIN */
