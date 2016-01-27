@@ -49,6 +49,7 @@
   .nav-bar ul {
   	display: block;
   	margin-bottom: 0;
+  	font-size: 80%;
   }
   
   .nav-bar li {
@@ -86,6 +87,11 @@
   .section-past-projects {
     padding-top: 15vh;
   }
+  
+  footer {
+    font-size: 80%;
+  }
+  
   
 }
 
