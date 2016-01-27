@@ -97,13 +97,13 @@ h2:after {
 	//border: 1px solid red;
 	display: inline;
 	margin-right: 5%;
+	font-size: 120%;
 }
 
 .nav-bar li a:link,
 .nav-bar li a:visited {
 	color: #fff;
 	text-decoration: none;
-	font-size: 120%;
 	padding-bottom: 0.5%;
 	border-bottom: 2px solid transparent;
 	transition: border-bottom 0.3s, color 0.3s;
@@ -112,7 +112,6 @@ h2:after {
 .nav-bar li a:active,
 .nav-bar li a:hover {
 	color: #e67e22;
-	font-size: 120%;
 	border-bottom: 2px solid #e67e22;
 }
 
@@ -139,6 +138,21 @@ h2:after {
 .sticky .logo {
 	width: auto;
 	float: left;
+}
+
+/* ------ Mobile Navigation ------*/
+
+.mobile-nav-icon {
+	float: right;
+	margin-top: 1%;
+	margin-right: 1%;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #fff;
 }
 
 
@@ -314,9 +328,14 @@ h2:after {
 .contact-clickable {
 	//border: 1px solid black;
 	color: #e67e22;
-	font-size: 200%;
+	font-size: 150%;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.contact-clickable span {
+	font-size: 50%;
+	vertical-align: middle;
 }
 
 textarea {
@@ -346,7 +365,7 @@ textarea {
 /* -------------------------------------------- */
 
 footer  {
-	padding: 1% 0;
+	padding: 1% 1%;
 	background-color: #222;
 	color: #fff;
 	font-size: 90%;

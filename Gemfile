@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
 gem 'foundation-icons-sass-rails'
 gem 'jquery-waypoints-rails', '~> 2.0', '>= 2.0.5'
+gem 'animate-rails', '~> 1.0', '>= 1.0.9'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

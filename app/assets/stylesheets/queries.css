@@ -1,0 +1,95 @@
+/* big tablets to 1200px (widths smaller than the 1140 px row) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 18px;
+	}
+	
+	header-box {
+    width: 100%;
+  }
+	
+	.header-box h1 {
+  	text-align: center;
+  }
+  
+}
+
+/* small tablets to big tablets: from 768 to 1023 px */
+@media only screen and (max-width: 1023px) {
+  
+  html {
+    font-size: 18px;
+	}
+	
+	.nav-links {
+  	margin-top: 1.5%;
+  	width: 60%;
+  }
+  
+  .header-box {
+    width: 100%;
+  }
+  
+}
+
+/* small phones to small tablets: from 481 to 767 px */
+@media only screen and (max-width: 767px) {
+  
+  .mobile-nav-icon {
+    display: block;
+  }
+  
+  .nav-links {
+  	float: left;
+  	text-align: left;
+  	margin-top: 0;
+  	display: none;
+    }
+  
+  .nav-bar ul {
+  	display: block;
+  	margin-bottom: 0;
+  }
+  
+  .nav-bar li {
+  	display: block;
+  }
+  
+  .nav-bar li a:link,
+  .nav-bar li a:visited {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .nav-bar li a:active,
+  .nav-bar li a:hover {
+    border-bottom: none;
+  }
+  
+  .sticky .nav-bar {
+  	height: auto;
+  }
+  
+  .header-box,
+  .btn-main {
+  	font-size: 80%;
+  }
+  
+  .section-about {
+    padding-top: 15vh;
+  }
+  
+  .intro-1 {
+  	width: 90%;
+  }
+  
+  .section-past-projects {
+    padding-top: 15vh;
+  }
+  
+}
+
+/* small phones: from 0 to 480 px */
+@media only screen and (max-width: 480px) {
+
+}
