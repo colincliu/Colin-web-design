@@ -1,0 +1,30 @@
+/* ---------------------------------------------- */
+/* BASIC SETUP                                    */ 
+/* Main Orange color: #e67e22                     */ 
+/* Nav-bar and Footer color: #222                 */ 
+/* ---------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    //border: 1px solid blue;
+}
+
+h2 {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 200%;
+}

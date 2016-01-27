@@ -1,6 +1,11 @@
 class PagesController < ApplicationController
     
-    def home
-    end
-    
+  def home
+    render layout: 'application'
+  end
+  
+  def devblog
+    render layout: 'devblog'
+  end
+  
 end
