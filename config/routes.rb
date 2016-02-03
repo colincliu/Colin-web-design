@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'devblog', to: 'pages#devblog'
   
-  resources :articles, path: '/devblog/articles'
+  #resources :articles, path: '/devblog/articles'
 
      
 
