@@ -8,13 +8,17 @@
 
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'application', 'application_home', '//fonts.googleapis.com/css?family=Lato:400,300,700', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application', 'application_devblog', '//fonts.googleapis.com/css?family=Lato:400,300,700', media: 'all', 'data-turbolinks-track' => true %>
   </head>
 
   <body>
     
-    <%= render 'navbar' %>
-
+    <% flash.each do |name, msg| %>
+      <ul>
+        <li><%= msg %></li>
+      </ul>
+    <% end %>
+    
     <%= yield %>
 
   </body>
