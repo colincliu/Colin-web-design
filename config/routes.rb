@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   
   resources :articles, path: '/devblog/articles'
 
+     
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   
   def devblog
     render layout: 'devblog'
+    
   end
   
 end
